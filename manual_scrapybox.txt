@@ -1,0 +1,49 @@
+
+castboxscraper.py Manual Instructions by Robwert Mota
+-----------------------------------------------
+
+Scraper tested in python 3.7.4 with scrapy 1.7.4
+
+Note: You need to installed python and scrapy to run this web scraper
+
+Command to execute: 
+
+	scrapy runspider castboxscraper.py -o podcasts.json
+	
+	(Get all categories from castbox and ALL the data from the podcasts)
+
+
+categoryscraping.py 
+--------------------------------------------------
+
+Command to execute:
+
+	 scrapy runspider categoryscraping.py -o Musicpodcasts.json -a category=10028 
+	( limit default stablished in 220 )
+	
+	 scrapy runspider categoryscraping.py -o Artspodcasts.json -a category=10022 -a limit=100
+	(the limit parameter is optional)
+
+Available categories: 
+
+    		id => 10021 [Arts]
+                id => 10028 [Business]
+                id => 10035 [Comedy]
+                id => 10039 [Education]
+                id => 10044 [Fiction]
+                id => 10048 [Leisure]
+                id => 10057 [Government]
+                id => 10058 [History]
+                id => 10059 [Fitness]
+                id => 10066 [Kids and Family]
+                id => 10071 [Music]
+                id => 10075 [News]
+                id => 10083 [Religion & Spirituality]
+                id => 10091 [Science]
+                id => 10101 [Society & Culture ]
+                id => 10107 [Sports]
+                id => 10123 [Technology]
+                id => 10124 [True Crime]
+                id => 10125 [TV & Film]
+                id => 105   [Audiobooks]                     
+           
